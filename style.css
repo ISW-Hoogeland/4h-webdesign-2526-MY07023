@@ -1,37 +1,59 @@
-/************************* DEBUG SETTINGS *************************/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EAE0D5;
+}
 
-/* Settings to help find errors in your css
-   uncomment temporarily to enable */
+/* Header-stijl */
+header {
+  background-color: #EAE0D5;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
 
-/* Add dotted line around all boxes.
-   This makes size of boxes visible.
-   Warning 1: this settings may change your layout.
-   Warning 2: keep the * as selector for all tags when uncommenting. */
-/*  * {border: 1px dotted black;}   */
-  
-/* Add semi-transparant dark background to all boxes
-   The more boxes are on top of eachother the darker tghe background color
-   Warning: keep the * as selector for all tags when uncommenting. */
-/*  * {background-color: rgba(0,0,0,5%);}  */
+/* Navigatiebalk */
+nav {
+  background-color: #EAE0D5;
+  padding: 10px 0;
+  text-align: center;
+}
 
-/************************* BASE SETTINGS *************************/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* Settings to make it easier for you
-   uncomment permanently when you understand the meaning of them */
-   
-/* border is included in width en height of boxes */
-/* * { box-sizing: border-box; } */
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
 
-/* standard margin 0 pixels */
-/* * { margin: 0px; } */
+nav a {
+  color: #EAE0D5;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-/* hide everything larger than the dimensions of the div-box
-   important side effect: browser usually doesn't take floats
-   into account when determining height of div, leading to 
-   div with height zero. With this settings, height of div-boxes
-   willl be large enough to fit floats inside. */
-/* div { overflow: hidden; }
+nav a:hover {
+  text-decoration: underline;
+}
 
-/************************* YOUR SETTINGS *************************/
+/* Hoofdinhoud */
+main {
+  padding: 20px;
+  background-color: #EAE0D5;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-/* add your css here, feel free to use comments and order them logically for better readability */
+/* Footer-stijl */
+footer {
+  background-color: #EAE0D5;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
