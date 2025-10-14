@@ -1,92 +1,66 @@
+
 :root {
-    --bg-light: #eae0d5;
-    --text-dark: #2c3e50;
-    --font-main: arial, sans-serif
-
-    --h1-bg: #C1ECAF;
-    --h1-text: #1e2d2b;
-    --h2-text: #74A9CB;
-    --h2-border: var(--h1-bg);
-    --h3-text: #D67160;
-
-    --list-bg: #e8f8f0;
-    --list-border: #A1D69A;
-    --strong-text: var(--h3-text);
-    --code-bg: #f0f0f0;
-
-    --def-bg: #f2fef9;
-    --def-border: var(--h1-bg);
-    --def-title: var(--text-dark);
-
-    --nav-bg: var(--h2-text);
-    --nav-text: var(--code-bg);
-
-    --footer-bg: var(--h1-bg); 
-    --footer-text: var(--h1-text);
+    --kleur-achtergrond: #EAE0D5;
+    --kleur-hoofdtint: #C6AC8F;
+    --kleur-tekst: #222;
+    --kleur-accent: #5E503F;
+    --font-hoofd: 'Arial', sans-serif;
 }
-
-
-
-
-
-
 
 body {
-  font-family: var(--font-main);
-  margin: 0;
-  padding: 0;
-  background-color:var(--nav-bg) #EAE0D5;
+    font-family: var(--font-hoofd);
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
 }
 
-/* Header-stijl */
+
 header {
-  background-color: #EAE0D5;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+    background-color: var(--kleur-hoofdtint);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
 }
 
-/* Navigatiebalk */
+
 nav {
-  background-color:var(--nav-bg) #EAE0D5;
-  padding: 10px 0;
-  text-align: center;
+    background-color: var(--kleur-accent);
+    padding: 0.5rem;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
-  color: #EAE0D5;
-  text-decoration: none;
-  font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Hoofdinhoud */
+
 main {
-  padding: 20px;
-  background-color: #EAE0D5;
-  max-width: 800px;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: grid;
+    place-items: center;
 }
 
-/* Footer-stijl */
 footer {
-  background-color: #EAE0D5;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+    background-color: var(--kleur-hoofdtint);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
