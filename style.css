@@ -54,7 +54,7 @@ nav a:hover {
 main {
     padding: 2rem;
     display: grid;
-    place-items: center;
+    /* place-items: center; */
 }
 
 footer {
@@ -63,4 +63,9 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+.afbeeldingen {
+    display: flex;
+    gap: 23px;
 }
